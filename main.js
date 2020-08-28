@@ -4,7 +4,6 @@ $(document).ready(function () {
     method: "GET",
     success: function (data) {
       var response = data.response;
-      console.log(response);
       var source = $("#template").html();
       var template = Handlebars.compile(source);
       for (var i = 0; i < response.length; i++) {
@@ -17,7 +16,7 @@ $(document).ready(function () {
     },
   });
   /*BONUS*/
-  // funzione al click del value del select
+  // funzione al click del value del select per trovare generi
   $(".select").click(function () {
     var cd = $(".cd");
     var genre = $(this).val();
@@ -25,11 +24,11 @@ $(document).ready(function () {
       $(".cd").show();
     } else if (genre == "1") {
       searchForClass(cd, "Rock");
-    } else if (genre == '2') {
+    } else if (genre == "2") {
       searchForClass(cd, "Pop");
-    } else if (genre == '3') {
+    } else if (genre == "3") {
       searchForClass(cd, "Metal");
-    } else if (genre == '4') {
+    } else if (genre == "4") {
       searchForClass(cd, "Jazz");
     }
     // funzione per capire se un elemento ha una classe o meno e nasconderlo
