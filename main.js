@@ -4,10 +4,12 @@ $(document).ready(function () {
     method: "GET",
     success: function (data) {
 	  var response = data.response;
-	  var source = $('.template').html();
-	  var html = teplate()
-	  for (var i=0;i<response.length;i++){
-         $('.container-cd').append('ciao');
+	  console.log(response);
+	  var source = $('#template').html();
+	  var template = Handlebars.compile(source);
+	  for (var i=0; i< response.length; i++){
+		 var clone = template(response[i]);
+		 $('.cds-container').append(clone);
 	  }
 	},
     error: function () {
