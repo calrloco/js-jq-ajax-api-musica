@@ -21,7 +21,7 @@ $(document).ready(function () {
     var cd = $(".cd");
     var genre = $(this).val();
     if (genre == "0") {
-      $(".cd").show();
+      $(".cd").show(200);
     } else if (genre == "1") {
       searchForClass(cd, "Rock");
     } else if (genre == "2") {
