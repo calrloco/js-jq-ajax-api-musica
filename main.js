@@ -30,7 +30,7 @@ $(document).ready(function () {
       searchForClass(cd, "Metal");
     } else if (genre == "4") {
       searchForClass(cd, "Jazz");
-    }
+    };
     // funzione per capire se un elemento ha una classe o meno e nasconderlo
     function searchForClass(cd, clss) {
       cd.each(function () {
@@ -40,6 +40,6 @@ $(document).ready(function () {
           $(this).show();
         }
       });
-    }
+    };
   });
 });
