@@ -16,10 +16,11 @@
       <div class="container">
         <img src="logo.png" alt="logo" />
         <select name="" id="" class="select">
-            <option value="" class="select__option">Rock</option>
-            <option value="" class="select__option">Pop</option>
-            <option value="" class="select__option">Metal</option>
-            <option value="" class="select__option">Jazz</option>
+            <option value="0" class="select__option">Tutti i generi</option>
+            <option value="1" class="select__option">Rock</option>
+            <option value="2" class="select__option">Pop</option>
+            <option value="3" class="select__option">Metal</option>
+            <option value="4" class="select__option">Jazz</option>
         </select>
       </div>
     </header>
@@ -27,7 +28,7 @@
     <script id="template" type="text/x-handlebars-template">
       
         <div class="cd {{genre}}">
-          <img src="{{poster}}" alt="" />
+          <img src="{{poster}}" alt="Image could not be loaded" />
           <h3>
             {{title}}
           </h3>
