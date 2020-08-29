@@ -20,7 +20,7 @@ $(document).ready(function () {
   $(".select").click(function () {
     var cd = $(".cd");
     var genre = capitalize($(this).val());
-     if (genre != "All") {
+    if (genre != "All") {
        searchForClass(cd, genre);
       } else {
        cd.show();

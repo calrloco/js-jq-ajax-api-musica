@@ -14,6 +14,10 @@ body {
     width: 1070px;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
 }
 
 header {
@@ -67,3 +71,14 @@ header img {
 .cd span.year {
     color: grey;
 }
+.select{
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1E2D3B;
+    border: none;
+}
+select:focus{
+    outline: none;
+}
+
