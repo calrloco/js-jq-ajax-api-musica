@@ -19,12 +19,12 @@ $(document).ready(function () {
   // funzione al click del value del select per trovare generi
   $(".select").click(function () {
     var cd = $(".cd");
-    var genre = $(this).val();
-    if (genre != 0) {
-      searchForClass(cd, genre);
-    }else{
-      cd.show();
-    }
+    var genre = capitalize($(this).val());
+     if (genre != "All") {
+       searchForClass(cd, genre);
+      } else {
+       cd.show();
+      }
   });
   // funzione per capire se un elemento ha una classe o meno e nasconderlo
   function searchForClass(cd, clss) {
@@ -35,5 +35,10 @@ $(document).ready(function () {
         $(this).show();
       }
     });
-  };
+  }
 });
+/*Capitalize Value in caso il value venga scritto minuscolo 
+visto che le classi legate al genere hanno la maiuscola*/
+function capitalize(stringa) {
+  return stringa.charAt(0).toUpperCase() + stringa.slice(1);
+};
