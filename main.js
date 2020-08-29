@@ -20,17 +20,11 @@ $(document).ready(function () {
   $(".select").click(function () {
     var cd = $(".cd");
     var genre = $(this).val();
-    if (genre == "0") {
-      cd.show(200);
-    } else if (genre == "1") {
-      searchForClass(cd, "Rock");
-    } else if (genre == "2") {
-      searchForClass(cd, "Pop");
-    } else if (genre == "3") {
-      searchForClass(cd, "Metal");
-    } else if (genre == "4") {
-      searchForClass(cd, "Jazz");
-    }
+    if (genre != 0) {
+      searchForClass(cd, genre);
+    }else{
+      cd.show();
+    };
   });
   // funzione per capire se un elemento ha una classe o meno e nasconderlo
   function searchForClass(cd, clss) {
