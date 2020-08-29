@@ -24,7 +24,7 @@ $(document).ready(function () {
       searchForClass(cd, genre);
     }else{
       cd.show();
-    };
+    }
   });
   // funzione per capire se un elemento ha una classe o meno e nasconderlo
   function searchForClass(cd, clss) {
@@ -35,5 +35,5 @@ $(document).ready(function () {
         $(this).show();
       }
     });
-  }
+  };
 });
