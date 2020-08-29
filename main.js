@@ -30,16 +30,16 @@ $(document).ready(function () {
       searchForClass(cd, "Metal");
     } else if (genre == "4") {
       searchForClass(cd, "Jazz");
-    };
-    // funzione per capire se un elemento ha una classe o meno e nasconderlo
-    function searchForClass(cd, clss) {
-      cd.each(function () {
-        if ($(this).hasClass(clss) == false) {
-          $(this).hide();
-        } else {
-          $(this).show();
-        }
-      });
-    };
+    }
   });
+  // funzione per capire se un elemento ha una classe o meno e nasconderlo
+  function searchForClass(cd, clss) {
+    cd.each(function () {
+      if ($(this).hasClass(clss) == false) {
+        $(this).hide();
+      } else {
+        $(this).show();
+      }
+    });
+  }
 });

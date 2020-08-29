@@ -45,6 +45,7 @@ header img {
     height: 360px;
     background: rgb(46, 58, 70);
     text-align: center;
+    cursor: pointer;
 }
 
 .cd img {
